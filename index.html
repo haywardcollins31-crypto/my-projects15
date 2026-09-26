@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freshman Survey 2026</title>
+  <style>
+    /* Making it look professional */
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1b1b32; color: white; padding: 40px; }
+    #survey-form { background: #2a2a40; padding: 30px; border-radius: 10px; max-width: 600px; margin: 0 auto; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+    .input-group { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 8px; font-size: 1.1rem; }
+    input[type="text"], input[type="email"], input[type="number"], select, textarea {
+      width: 100%; padding: 10px; border-radius: 5px; border: none; margin-top: 5px;
+    }
+    .inline { width: auto; margin-right: 10px; }
+    button { width: 100%; padding: 12px; background-color: #3b3b4f; color: white; border: 1px solid white; border-radius: 5px; cursor: pointer; font-size: 1rem; }
+    button:hover { background-color: white; color: #1b1b32; }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">Ultimate Student Survey</h1>
+  <p id="description">Tell us what you really think about the school year!</p>
+
+  <form id="survey-form">
+
+    <div class="input-group">
+      <label id="name-label" for="name">Full Name</label>
+      <input id="name" type="text" placeholder="e.g. Alex Smith" required>
+    </div>
+
+    <div class="input-group">
+      <label id="email-label" for="email">School Email</label>
+      <input id="email" type="email" placeholder="student@school.edu" required>
+    </div>
+
+    <div class="input-group">
+      <label id="number-label" for="number">Your Age (13-19)</label>
+      <input id="number" type="number" min="13" max="19" placeholder="14" required>
+    </div>
+
+    <div class="input-group">
+      <label for="dropdown">Favorite Subject:</label>
+      <select id="dropdown">
+        <option value="" disabled selected>Select an option</option>
+        <option value="cs">Computer Science</option>
+        <option value="art">Art</option>
+        <option value="math">Math</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Would you recommend this school?</label>
+      <label><input name="recommend" type="radio" value="yes" class="inline"> Definitely</label>
+      <label><input name="recommend" type="radio" value="maybe" class="inline"> Maybe</label>
+    </div>
+
+    <div class="input-group">
+      <label>What clubs are you in? (Check all that apply)</label>
+      <label><input type="checkbox" value="sports" class="inline"> Sports</label>
+      <label><input type="checkbox" value="coding" class="inline"> Coding Club</label>
+      <label><input type="checkbox" value="music" class="inline"> Band/Choir</label>
+    </div>
+
+    <div class="input-group">
+      <label for="comments">Any other thoughts?</label>
+      <textarea id="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+    </div>
+
+    <button id="submit" type="submit">Submit Survey</button>
+
+  </form>
+
+</body>
+</html>
