@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multimedia Player</title>
+</head>
+<body>
+  <h1>Multimedia Player</h1>
+
+  <section>
+    <h2>Audio Player</h2>
+    <audio controls aria-label="Audio track player">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/symphony.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <section>
+    <h2>Video Player</h2>
+    <video controls width="600" aria-label="Video player with transcript">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/cube.mp4" type="video/mp4">
+      <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+    <p>Transcript of the video goes here.</p>
+  </section>
+</body>
+</html>
